@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+
     return (
         <>
-            <footer className="fixed bottom-0 py-2 shadow w-screen">
+            <footer className="bg-white fixed bottom-0 py-2 shadow w-screen">
                 <div className="container flex justify-around text-center">
                     <Link to="/">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
