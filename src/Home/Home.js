@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Loader from '../Loader'
 import Homebox from './Homebox'
 
 const Home = () => {
@@ -9,16 +10,13 @@ const Home = () => {
         .then( res => res.json())
         .then( data => setNews(data))
     }, [])
-    console.log(news);
-
+console.log(news.length)
     return (
-        <>
-            <div className="container mb-20">
+            news.length !== 0 ? ( <div className="container mb-20">
                 {
                     news.map((box, i) => (<Homebox key = {i} type={box.type} boxdata = {box}  /> ))
                 }
-            </div>
-        </>
+            </div> ) : <Loader />
     )
 }
 

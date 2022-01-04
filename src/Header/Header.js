@@ -10,14 +10,14 @@ const Header = () => {
 
     return (
         <>
-            <header className="bg-primary py-2">
-                <div className="container flex justify-between"> 
-                    <div className="logo text-3xl text-white">Somoyersonglap</div>
-                    <button type="button" className="bg-white rounded-md p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" onClick= {() => toggleDrawer(true)} >
+            <header className="bg-white py-2 shadow">
+                <div className="container flex justify-center text-center"> 
+                    <div className="logo text-3xl text-white"> <Link to ="/"><img src="https://mobile.somoyersonglap.ae/somoyersonglap-logo.png" alt="Somoyersonglap" className="m-auto w-48" /> </Link> </div>
+                    {/* <button type="button" className="bg-white rounded-md p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" onClick= {() => toggleDrawer(true)} >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                    </button>
+                    </button> */}
 
                 </div>
             </header>

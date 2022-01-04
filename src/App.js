@@ -7,6 +7,7 @@ import Footer from './Footer/Footer'
 import Home from './Home/Home';
 import Search from './Search/Search';
 import Page from './Page/Page';
+import Single from './Single/Single';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Switch>
             <Route path="/page">
               <Page />
+            </Route>
+            <Route path="/details/:id">
+              <Single />
             </Route>
             <Route path="/search">
               <Search />
