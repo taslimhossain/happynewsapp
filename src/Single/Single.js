@@ -16,8 +16,8 @@ const Single = () => {
 
     return (
         news?.title ? ( <div className="container mb-20 mt-10 py-3 ">
-            <div className="lg:flex lg:items-center lg:justify-between p-4 shadow-lg rounded-lg">
-                <div className="efef">
+            <div className="p-4 shadow-lg rounded-lg">
+                <div className="lg:flex lg:items-center lg:justify-between">
                     <div className="flex-1 min-w-0">
                         { news.news_subtitle? ( <h4 className="mb-3 text-2xl text-primary">{news.news_subtitle}</h4> ) : '' }
                         <h2 className="text-4xl font-bold leading-normal text-gray-900">{news.title?.rendered}</h2>
